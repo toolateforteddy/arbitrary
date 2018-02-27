@@ -8,9 +8,8 @@ import (
 	"strings"
 )
 
-// Dig into a decoded json object
-// to grab values deep within, without having to make all of the
-// intermediate structs.
+// Dig into a decoded json object to grab values deep within, without having to
+// make all of the intermediate structs.
 func Dig(v interface{}, path ...string) (interface{}, error) {
 	retVal := v
 	lastVal := v
